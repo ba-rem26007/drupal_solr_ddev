@@ -1,0 +1,16 @@
+# DDEV generated files
+.ddev/.webimageBuild
+.ddev/import-db
+.ddev/import-files
+.ddev/commands/.gitkeep
+.ddev/docker-compose*.yaml
+.ddev/.mutagen
+.ddev/.global_commands
+.ddev/.downloads
+
+# General ignores
+.idea/
+*.log
+node_modules/
+vendor/
+.env
