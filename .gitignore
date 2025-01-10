@@ -17,29 +17,39 @@ vendor/
 
 
 # Ignorer le core Drupal et autres dépendances gérées par Composer
-web/core/
-web/libraries/
-vendor/
+/web/update.php
+/web/core/
+/web/libraries/
+/vendor/
 
-web/modules/contrib/
-web/profiles/contrib/
+/web/modules/contrib/
+/web/profiles/contrib/
 #Versionner les profils personnalisés (créés pour votre projet). Exemple : web/profiles/custom.
-web/themes/contrib/
+/web/themes/contrib/
+/web/profiles/drupal_cms_installer
 
 
 
 # Fichiers et dossiers Drupal générés
 /web/sites/*/files/
 /web/sites/*/private/
-/web/sites/default/files/
+#/web/sites/default/files/
 /web/sites/default/settings.local.php
 /web/sites/default/*.temp
 /web/sites/default/*-backup.*
 
-# Caches Drupal
-web/core/tests/fixtures/
-web/core/modules/system/tests/fixtures/
+# Fichiers et caches générés par Drupal
+/web/sites/default/*.temp
+/web/sites/default/*-backup.*
+/web/sites/default/services.local.yml
+/web/sites/default/development.services.yml
 
+
+# Caches Drupal
+#web/core/tests/fixtures/
+#web/core/modules/system/tests/fixtures/
+
+	
 # Configurations spécifiques
 /web/sites/default/services.local.yml
 /web/sites/default/development.services.yml
@@ -62,7 +72,9 @@ temp/
 # Fichiers générés par le système ou les IDE
 *.swp
 *.DS_Store
+
 Thumbs.db
+
 
 # Fichiers spécifiques à DDEV
 .ddev/.downloads
