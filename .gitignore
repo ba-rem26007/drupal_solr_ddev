@@ -14,3 +14,63 @@
 node_modules/
 vendor/
 .env
+
+
+
+# Fichiers et dossiers Drupal générés
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/default/files/
+/web/sites/default/settings.local.php
+/web/sites/default/*.temp
+/web/sites/default/*-backup.*
+
+# Caches Drupal
+web/core/tests/fixtures/
+web/core/modules/system/tests/fixtures/
+
+# Configurations spécifiques
+/web/sites/default/services.local.yml
+/web/sites/default/development.services.yml
+/web/sites/default/settings.php.lock
+
+# Fichiers spécifiques à Composer
+composer.phar
+
+# Fichiers et dossiers temporaires
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Fichiers de logs additionnels
+*.log
+*.cache
+*.gz
+
+# Fichiers générés par le système ou les IDE
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Fichiers spécifiques à DDEV
+.ddev/.downloads
+.ddev/.config.yaml
+.ddev/.global_commands
+
+
+
+
+
+# Recipes générés automatiquement
+recipes/
+recipes/*.yml
+recipes/*.json
+recipes/*.php
+# Ignorer les recipes temporaires ou locaux
+recipes/temp/
+recipes/*.local.yml
+recipes/*.dev.yml
+recipes/*-backup.*
+recipes/*.cache
+
