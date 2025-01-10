@@ -16,6 +16,17 @@ vendor/
 .env
 
 
+# Ignorer le core Drupal et autres dépendances gérées par Composer
+web/core/
+web/libraries/
+vendor/
+
+web/modules/contrib/
+web/profiles/contrib/
+#Versionner les profils personnalisés (créés pour votre projet). Exemple : web/profiles/custom.
+web/themes/contrib/
+
+
 
 # Fichiers et dossiers Drupal générés
 /web/sites/*/files/
